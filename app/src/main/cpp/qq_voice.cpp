@@ -155,7 +155,6 @@ JNIEXPORT jint JNI_OnLoad(JavaVM *vm, void *reserved) {
     JNIEnv *env = NULL;
     jint result = -1;
 
-
     if (vm->GetEnv((void **) &env, JNI_VERSION_1_4) != JNI_OK) {
         LOGI("ERROR: GetEnv failed\n");
         return -1;
